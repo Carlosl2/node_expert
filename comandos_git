@@ -2,3 +2,7 @@ git init -> crea el repositorio de git de manera loca
 git add .  -> agrega todos los archivos hasta el ultimo commit de manera local
 git  commit -m "Primera carga" -> guarda los cambios de manera local 
 git checkout --.  -> Permite recuperar archivos o capetas eliminadas localmente  
+
+git remote add origin https://github.com/Carlosl2/node_expert.git -> apuntar al repositorio de almacenamiento
+git branch -M main -> asignar la rama master para cargar el repositorio 
+git push -u origin main  -> carga en el repositorio remoto
