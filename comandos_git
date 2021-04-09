@@ -6,3 +6,10 @@ git checkout --.  -> Permite recuperar archivos o capetas eliminadas localmente
 git remote add origin https://github.com/Carlosl2/node_expert.git -> apuntar al repositorio de almacenamiento
 git branch -M main -> asignar la rama master para cargar el repositorio 
 git push -u origin main  -> carga en el repositorio remoto
+
+
+/////////// Actualizar existente  /////////////////////
+
+git add .
+git commit - m 'text'
+git push 
