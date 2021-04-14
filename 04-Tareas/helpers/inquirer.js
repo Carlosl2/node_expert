@@ -43,13 +43,19 @@ const preguntas = [ //arreglo que espera el inquirerMenu para ejecutar
 
     }
 ]
+const pausa =async()=>{
+    const question = [
+        {
+            type: 'input',
+            name: 'opcion', 
+            message: `\n Presione ${'Enter'.green} para continuar ... `
+        }
+    ]
 
-const pausa = [
-    {
-        type: 'input',
-        name: 'opcion' 
-    }
-]
+    await inquirer.prompt(question)
+
+}
+
 
 const inquirerMenu = async () => { //funcion asincrona que pinta el menu
     //  console.clear();
@@ -61,6 +67,20 @@ const inquirerMenu = async () => { //funcion asincrona que pinta el menu
 
     return opcion  //toda promesa debe devolver un valor 
 }
+
+const leerInput = async (message) => 
+
+    {
+        const question = [
+            {
+                type: 'input', 
+                name:'desc', 
+                message         //solo se escribe message porque EMA script asume que es el valor recibido el igual al asignado message:message
+            }
+
+        ]
+    }    
+
 
 module.exports = {
     inquirerMenu,
